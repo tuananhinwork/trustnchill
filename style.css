@@ -213,3 +213,85 @@ footer {
     gap: 18px;
   }
 }
+
+/* ... (các phần trước giữ nguyên) ... */
+
+/* Products Section */
+.products {
+  background: #fff;
+  padding: 44px 0 40px 0;
+}
+.products h2 {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 2rem;
+}
+.products-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-card {
+  background: #f6f6f6;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 26px 18px 28px 18px;
+  text-align: center;
+  width: 210px;
+  transition: transform .15s, box-shadow .15s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 4px 18px rgba(230,0,18,0.14);
+}
+.product-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #e60012;
+}
+.product-card p {
+  font-size: 0.97rem;
+  margin-bottom: 18px;
+  color: #444;
+}
+.btn-outline {
+  display: inline-block;
+  border: 2px solid #e60012;
+  color: #e60012;
+  background: #fff;
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 0.99rem;
+  transition: background .2s, color .2s;
+}
+.btn-outline:hover {
+  background: #e60012;
+  color: #fff;
+}
+
+/* Responsive cho products */
+@media (max-width: 900px) {
+  .products-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .product-card {
+    width: 85vw;
+    max-width: 320px;
+  }
+}
