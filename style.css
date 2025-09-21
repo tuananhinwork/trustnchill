@@ -295,3 +295,68 @@ footer {
     max-width: 320px;
   }
 }
+
+/* Reviews Section */
+.reviews {
+  background: #f6f6f6;
+  padding: 48px 0;
+}
+.reviews h2 {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 2rem;
+}
+.reviews-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.review-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 28px 22px;
+  width: 320px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: transform .15s, box-shadow .15s;
+}
+.review-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 4px 18px rgba(230,0,18,0.10);
+}
+.review-avatar img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+.review-content {
+  flex: 1;
+}
+.review-text {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 12px;
+}
+.review-author {
+  font-weight: 600;
+  color: #e60012;
+  font-size: 1rem;
+}
+
+/* Responsive cho reviews */
+@media (max-width: 900px) {
+  .reviews-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+  .review-card {
+    width: 92vw;
+    max-width: 350px;
+  }
+}
