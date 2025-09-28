@@ -1,0 +1,329 @@
+/* ===== Header ===== */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  margin-bottom: 0;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+}
+.logo img {
+  height: 42px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+.nav-list li a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+  padding: 7px 18px;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+  text-decoration: none;
+}
+.nav-list li a.active,
+.nav-list li a:hover {
+  background: #e60012;
+  color: #fff;
+}
+
+/* ===== Banner ===== */
+.banner {
+  background: linear-gradient(90deg, #e60012 0%, #ff90a6 100%);
+  color: #fff;
+  padding: 54px 0 38px 0;
+}
+.banner-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+}
+.banner-content h1 {
+  font-size: 2.15rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.banner-content p {
+  font-size: 1.12rem;
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+.banner-img {
+  max-width: 370px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+  background: #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 32px 0;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.footer-logo img {
+  margin-bottom: 8px;
+}
+.footer-logo p {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+.footer-contact p {
+  font-size: 0.98rem;
+}
+.footer-contact a {
+  color: #fff;
+  margin-right: 8px;
+  font-weight: 500;
+  transition: color .2s;
+  text-decoration: none;
+}
+.footer-contact a:hover {
+  color: #e60012;
+}
+
+/* ===== Main Content ===== */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+.container {
+  width: 92%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.vieon-section {
+  background: #fff;
+  padding: 44px 0;
+  margin-bottom: 0;
+}
+.vieon-section h2 {
+  color: #e60012;
+  font-size: 1.28rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+.vieon-section p {
+  font-size: 1.12rem;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+/* ===== Bảng giá ===== */
+.price-table {
+  margin: 18px auto 24px auto;
+  text-align: center;
+  max-width: 340px;
+}
+.price-table .table-title {
+  text-align: center;
+  margin-bottom: 4px;
+  color: #e60012;
+  font-weight: 600;
+  font-size: 1.07rem;
+}
+.price-table table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-width: 220px;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.price-table th,
+.price-table td {
+  border: 1px solid #dbdbdb;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 1rem;
+}
+.price-table th {
+  background: #ffe5ea;
+  color: #e60012;
+  font-weight: 600;
+}
+.price-table tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/* ===== Lưu ý ===== */
+.note {
+  background: #fff6f6;
+  border-left: 4px solid #e60012;
+  padding: 14px 18px;
+  border-radius: 7px;
+  font-size: 1.02rem;
+  margin: 34px 0 0 0;
+  color: #c02525;
+}
+.note .highlight {
+  color: #e60012;
+  font-weight: 600;
+}
+
+/* ===== Nút Zalo/Messenger cố định ===== */
+.fixed-social-buttons {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 9999;
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  width: 54px;
+  height: 54px;
+  transition: box-shadow 0.18s, transform 0.15s;
+  border: 2px solid #e7e7e7;
+}
+.social-btn img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.social-btn:hover {
+  box-shadow: 0 6px 20px rgba(230,0,18,0.18);
+  transform: translateY(-2px) scale(1.08);
+  border-color: #e60012;
+}
+.zalo-btn {
+  border-color: #0084ff;
+}
+.zalo-btn:hover {
+  border-color: #005b99;
+}
+.messenger-btn {
+  border-color: #00b2ff;
+}
+.messenger-btn:hover {
+  border-color: #0077b5;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .banner-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+  }
+  .banner-img {
+    max-width: 96vw;
+  }
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .price-table table {
+    width: 100%;
+    min-width: 220px;
+  }
+}
+@media (max-width: 600px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 12px;
+  }
+  .container {
+    width: 99%;
+  }
+  .banner-content h1 {
+    font-size: 1.25rem;
+  }
+  .price-table {
+    max-width: 100vw;
+  }
+  .note {
+    font-size: 0.97rem;
+    padding: 10px 6px;
+  }
+}
+
+/* Nút xem tất cả dịch vụ và hd mua hàng*/
+.products-actions {
+  margin-top: 32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 22px; /* khoảng cách giữa hai nút */
+  flex-wrap: wrap;
+}
+
+.btn-view-all-services,
+.btn-guide {
+  display: inline-block;
+  background: #e60012;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.09rem;
+  border-radius: 30px;
+  padding: 12px 32px;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(230,0,18,0.11);
+  transition: background .2s, transform .18s, box-shadow .2s;
+  letter-spacing: 0.5px;
+}
+
+.btn-guide {
+  background: #0084ff;
+  box-shadow: 0 2px 12px rgba(0,132,255,0.11);
+}
+
+.btn-view-all-services:hover {
+  background: #b8000e;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(230,0,18,0.16);
+}
+
+.btn-guide:hover {
+  background: #005b99;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(0,132,255,0.18);
+}
+
+@media (max-width: 600px) {
+  .products-actions {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .btn-view-all-services,
+  .btn-guide {
+    width: 100%;
+    max-width: 320px;
+    font-size: 1.03rem;
+    padding: 11px 0;
+  }
+}
+/* Nút xem tất cả dịch vụ và hd mua hàng*/
